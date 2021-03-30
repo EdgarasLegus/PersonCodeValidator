@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCodeValidator.UI", "PersonCodeValidator.UI\PersonCodeValidator.UI.csproj", "{860AC57B-B5A7-42F5-99B2-9BDF24D0B81C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCodeValidator.Contracts", "PersonCodeValidator.Contracts\PersonCodeValidator.Contracts.csproj", "{1B1F8D06-76EE-4E7C-ABE1-AA5834EEE13F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCodeValidator.BusinessLogic", "PersonCodeValidator.BusinessLogic\PersonCodeValidator.BusinessLogic.csproj", "{832F0264-4C6A-4430-B945-26D2DE5880FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCodeValidator.Interfaces", "PersonCodeValidator.Interfaces\PersonCodeValidator.Interfaces.csproj", "{D83661FC-EB90-4D37-BC28-D9EE08B84A2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCodeValidator.Tests", "PersonCodeValidator.Tests\PersonCodeValidator.Tests.csproj", "{2A6F1563-7E7F-4A14-9FFE-12EEBE709542}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{860AC57B-B5A7-42F5-99B2-9BDF24D0B81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{860AC57B-B5A7-42F5-99B2-9BDF24D0B81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{860AC57B-B5A7-42F5-99B2-9BDF24D0B81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{860AC57B-B5A7-42F5-99B2-9BDF24D0B81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B1F8D06-76EE-4E7C-ABE1-AA5834EEE13F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B1F8D06-76EE-4E7C-ABE1-AA5834EEE13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B1F8D06-76EE-4E7C-ABE1-AA5834EEE13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B1F8D06-76EE-4E7C-ABE1-AA5834EEE13F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832F0264-4C6A-4430-B945-26D2DE5880FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832F0264-4C6A-4430-B945-26D2DE5880FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832F0264-4C6A-4430-B945-26D2DE5880FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832F0264-4C6A-4430-B945-26D2DE5880FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D83661FC-EB90-4D37-BC28-D9EE08B84A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83661FC-EB90-4D37-BC28-D9EE08B84A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D83661FC-EB90-4D37-BC28-D9EE08B84A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D83661FC-EB90-4D37-BC28-D9EE08B84A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A6F1563-7E7F-4A14-9FFE-12EEBE709542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6F1563-7E7F-4A14-9FFE-12EEBE709542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6F1563-7E7F-4A14-9FFE-12EEBE709542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6F1563-7E7F-4A14-9FFE-12EEBE709542}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCCC316C-50B7-488D-8BA5-127257F17963}
+	EndGlobalSection
+EndGlobal
