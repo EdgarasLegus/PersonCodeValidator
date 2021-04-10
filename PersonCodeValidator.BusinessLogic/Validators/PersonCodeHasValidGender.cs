@@ -2,7 +2,6 @@
 using PersonCodeValidator.Contracts.Entities;
 using PersonCodeValidator.Data;
 using PersonCodeValidator.Data.Domain.Enum;
-using PersonCodeValidator.Data.Settings;
 using PersonCodeValidator.Interfaces;
 using System;
 using System.Collections.Generic;

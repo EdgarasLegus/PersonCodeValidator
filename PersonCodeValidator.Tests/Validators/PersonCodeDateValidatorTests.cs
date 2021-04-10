@@ -3,6 +3,7 @@ using NUnit.Framework;
 using PersonCodeValidator.BusinessLogic;
 using PersonCodeValidator.BusinessLogic.Validators;
 using PersonCodeValidator.Contracts.Entities;
+using PersonCodeValidator.Data;
 using PersonCodeValidator.Interfaces;
 using PersonCodeValidator.Interfaces.Services;
 using System;

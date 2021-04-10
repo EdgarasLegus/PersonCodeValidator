@@ -1,13 +1,6 @@
-﻿using Microsoft.Extensions.Options;
-using PersonCodeValidator.Contracts.Entities;
-using PersonCodeValidator.Data;
-using PersonCodeValidator.Data.Settings;
+﻿using PersonCodeValidator.Contracts.Entities;
 using PersonCodeValidator.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
 using System.Resources;
-using System.Text;
 
 namespace PersonCodeValidator.BusinessLogic.Vaildators
 {

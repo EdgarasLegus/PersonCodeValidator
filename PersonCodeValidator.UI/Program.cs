@@ -1,11 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.DependencyInjection;
 using PersonCodeValidator.BusinessLogic;
 using PersonCodeValidator.BusinessLogic.Vaildators;
 using PersonCodeValidator.BusinessLogic.Validators;
 using PersonCodeValidator.Contracts.Entities;
-using PersonCodeValidator.Data.Settings;
 using PersonCodeValidator.Interfaces;
 using PersonCodeValidator.Interfaces.Services;
 using System;
@@ -45,12 +42,7 @@ namespace PersonCodeValidator.UI
         private static IServiceCollection ConfigureServices()
         {
             IServiceCollection services = new ServiceCollection();
-            IConfiguration configuration = new ConfigurationBuilder()
-                .AddJsonFile(@"./appsettings.json")
-                .Build();
             ResourceManager resourceManager = new ResourceManager("PersonCodeValidator.UI.Resources.ValidationMessages-EN", Assembly.GetExecutingAssembly());
-
-            services.Configure<ResourcesConfig>(options => configuration.GetSection("ResourcesConfig").Bind(options));
 
 
             services.AddScoped<IPersonCodeValidatorService, PersonCodeValidatorService>()

@@ -2,7 +2,6 @@
 using PersonCodeValidator.Interfaces;
 using System;
 using System.Globalization;
-using PersonCodeValidator.Data.Settings;
 using Microsoft.Extensions.Options;
 using System.Resources;
 using System.Reflection;
