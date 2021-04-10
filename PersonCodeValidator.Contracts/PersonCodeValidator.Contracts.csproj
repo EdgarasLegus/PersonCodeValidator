@@ -8,4 +8,8 @@
     <PackageReference Include="FluentValidation" Version="9.5.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PersonCodeValidator.Data\PersonCodeValidator.Data.csproj" />
+  </ItemGroup>
+
 </Project>

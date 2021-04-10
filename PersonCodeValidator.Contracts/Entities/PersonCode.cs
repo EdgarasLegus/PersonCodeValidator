@@ -1,21 +1,19 @@
-﻿using PersonCodeValidator.Contracts.Enums;
+﻿using PersonCodeValidator.Data;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace PersonCodeValidator.Contracts.Entities
 {
     public class PersonCode
     {
+        public PersonCodeDomain InputPersonCode { get; set; }
 
-        public Gender Gender { get; }
-        public string BirthDate { get; }
-        public string IdentificationNumbers { get; }
-
-        public PersonCode(string personCode)
+        public PersonCode(string inputGenderParameter, string personCode)
         {
-            Gender = (Gender)Enum.Parse(typeof(Gender), personCode.Substring(0, 1));
-            BirthDate = personCode.Substring(1, 6);
-            IdentificationNumbers = personCode.Substring(7, 4);
+            InputPersonCode = new PersonCodeDomain(inputGenderParameter, personCode);
         }
-
     }
+
+
 }

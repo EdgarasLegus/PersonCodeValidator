@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PersonCodeValidator.Contracts.Enums
+namespace PersonCodeValidator.Data.Domain.Enum
 {
-    public enum GenderParameter
+    public enum InputGenderParameter
     {
         V,
         M

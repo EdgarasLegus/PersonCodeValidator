@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PersonCodeValidator.Contracts\PersonCodeValidator.Contracts.csproj" />
+    <ProjectReference Include="..\PersonCodeValidator.Data\PersonCodeValidator.Data.csproj" />
   </ItemGroup>
 
 </Project>

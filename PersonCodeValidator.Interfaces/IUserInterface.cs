@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PersonCodeValidator.Interfaces
 {
-    public interface IUI
+    public interface IUserInterface
     {
         string GetGenderParameterInput();
         IEnumerable<string> GetValidationResult(string inputGenderParameter, string personCode);

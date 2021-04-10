@@ -7,11 +7,11 @@ using System.Text;
 
 namespace PersonCodeValidator.UI
 {
-    public class UI : IUI
+    public class UserInterface : IUserInterface
     {
         private readonly IPersonCodeValidatorService _personCodeValidatorService;
 
-        public UI(IPersonCodeValidatorService personCodeValidatorService)
+        public UserInterface(IPersonCodeValidatorService personCodeValidatorService)
         {
             _personCodeValidatorService = personCodeValidatorService;
         }
@@ -30,7 +30,7 @@ namespace PersonCodeValidator.UI
 
         public IEnumerable<string> GetValidationResult(string inputGenderParameter, string personCode)
         {
-            var personCodeUserImput = new PersonCodeUserInput(inputGenderParameter, personCode);
+            var personCodeUserImput = new PersonCode(inputGenderParameter, personCode);
             var validationResult = _personCodeValidatorService.Validate(personCodeUserImput);
             return validationResult;
         }

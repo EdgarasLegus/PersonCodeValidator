@@ -1,19 +1,27 @@
 ﻿using PersonCodeValidator.Contracts.Entities;
 using PersonCodeValidator.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
+using PersonCodeValidator.Data.Settings;
+using Microsoft.Extensions.Options;
+using System.Resources;
+using System.Reflection;
 
 namespace PersonCodeValidator.BusinessLogic.Validators
 {
-    public class PersonCodeHasValidDate : IValidatable<PersonCodeUserInput>
+    public class PersonCodeHasValidDate : IValidatable<PersonCode>
     {
-
-        public string Validate(PersonCodeUserInput personCodeUserInput)
+        private readonly ResourceManager _resourceManager;
+        public PersonCodeHasValidDate(ResourceManager resourceManager)
         {
-            return DateTime.TryParseExact(personCodeUserInput.InputPersonCode.BirthDate, "yyMMdd", CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal, out _) 
-                ? null : "Gimimo data yra neteisinga";
+            _resourceManager = resourceManager;
+        }
+
+        public string Validate(PersonCode personCode)
+        {
+            //var temp = DateTime.ParseExact(personCode.InputPersonCode.BirthDate, "yyMMdd", CultureInfo.InvariantCulture);
+            return DateTime.TryParseExact(personCode.InputPersonCode.BirthDate, "yyMMdd", CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal, out _)
+                ? null : _resourceManager.GetString("DateIsNotValid");
         }
     }
 }

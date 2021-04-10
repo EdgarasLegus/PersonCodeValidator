@@ -6,6 +6,6 @@ namespace PersonCodeValidator.Interfaces
 {
     public interface IValidatable<T> where T: class
     {
-        string Validate(T personCodeUserInput);
+        string Validate(T personCode);
     }
 }

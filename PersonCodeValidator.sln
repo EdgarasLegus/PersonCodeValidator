@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCodeValidator.Interfa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCodeValidator.Tests", "PersonCodeValidator.Tests\PersonCodeValidator.Tests.csproj", "{2A6F1563-7E7F-4A14-9FFE-12EEBE709542}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonCodeValidator.Data", "PersonCodeValidator.Data\PersonCodeValidator.Data.csproj", "{A58BF132-29AD-439E-AA12-718E407E1938}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2A6F1563-7E7F-4A14-9FFE-12EEBE709542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A6F1563-7E7F-4A14-9FFE-12EEBE709542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A6F1563-7E7F-4A14-9FFE-12EEBE709542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A58BF132-29AD-439E-AA12-718E407E1938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58BF132-29AD-439E-AA12-718E407E1938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58BF132-29AD-439E-AA12-718E407E1938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58BF132-29AD-439E-AA12-718E407E1938}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
